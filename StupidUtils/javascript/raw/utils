@@ -1,4 +1,4 @@
-function stringToDate(str){ // for date DD-MM-YYYY
+function stringToDate(str) { // for date DD-MM-YYYY
 	var parts = str.split('-');
 	//please put attention to the month (parts[0]), Javascript counts months from 0:
 	// January - 0, February - 1, etc
