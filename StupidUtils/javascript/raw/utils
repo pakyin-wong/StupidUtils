@@ -1,3 +1,4 @@
+//After converting to date, you can perform comparison.
 function stringToDate(str) { // for date DD-MM-YYYY
 	var parts = str.split('-');
 	//please put attention to the month (parts[0]), Javascript counts months from 0:
