@@ -1,11 +1,8 @@
-#!/usr/bin/sh
+#!/usr/bin/bash
 while IFS="=" read -r keyname value; do
-#eval "$keyname=\"\$$keyname\""
-#eval "echo \$$keyname"
-#eval "final_value=\"${!value}\""
-#eval "echo ${!value}"
-#eval "launchctl setenv \$$keyname \"\$final_value\""      
-#eval "echo \"launchctl setenv $keyname \\\"\$final_value\\\"\"" 
-#declare -x "$keyname=${!value}"
-declare -x "$keyname=a"
+  eval "declare -x \"\$keyname=$value\""
+  unset final_value
+  eval "declare -x \"final_value=$value\""
+  echo $final_value
+
 done < "$1"
