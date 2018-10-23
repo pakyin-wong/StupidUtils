@@ -1,3 +1,0 @@
---extract specific data and then replace with the specific data
-@htmlname\(name=".*"\),$1
-\1 @dbname\(name=\1
