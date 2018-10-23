@@ -1,3 +1,6 @@
 //weird case
 -new Date in the array
 -forget the foreach in javascript is different from java
+-setTimeout inside for loop
+-callback is used for synchronous call
+-multiple call
